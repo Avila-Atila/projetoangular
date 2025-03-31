@@ -1,0 +1,30 @@
+{
+  "name": "projeto-cs",
+  "version": "1.0.0",
+  "description": "O projeto Carona Solidária tem como objetivo reduzir o número de vagas ocupadas na instituição, promover a colaboração entre colegas e diminuir a emissão de gases poluentes, sendo uma iniciativa funcional, econômica e sustentável.",
+  "main": "index.js",
+  "scripts": {
+  "lint": "eslint apps --ext .ts",
+  "lint:fix": "eslint apps --ext .ts --fix",
+  "format": "prettier --write 'apps/**/*.{ts,html,css,scss}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lord320/Projeto-CS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lord320/Projeto-CS/issues"
+  },
+  "homepage": "https://github.com/lord320/Projeto-CS#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "prettier": "^3.5.3"
+  }
+}
