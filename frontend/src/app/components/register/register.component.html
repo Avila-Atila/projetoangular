@@ -1,0 +1,58 @@
+<section>
+  <form [formGroup]="registerUser" (ngSubmit)="onSubmit()">
+    <label class="text" for="form__email">E-mail Corporativo: </label>
+    <input
+      [class.user-valid]="registerUser.get('email')?.valid"
+      required
+      id="form__email"
+      type="email"
+      placeholder="email@ba.estudante.senai.br"
+      formControlName="email"
+    />
+    <label class="text" for="form__passowrd">Senha: </label>
+    <input
+      [class.user-valid]="
+        (registerUser.get('password')?.value?.length ?? 0) >= 8 &&
+        (registerUser.get('confirmPassword')?.value?.length ?? 0) >= 8 &&
+        !registerUser.errors?.['passwordsMismatch']
+      "
+      required
+      id="form__passowrd"
+      type="password"
+      placeholder="********"
+      minlength="8"
+      formControlName="password"
+    />
+    <label class="text" for="confirm__password">Confirme sua Senha: </label>
+    <div
+      *ngIf="
+        registerUser.errors?.['passwordsMismatch'] &&
+        (registerUser.get('password')?.touched ||
+          registerUser.get('confirmPassword')?.touched)
+      "
+    >
+      <p class="text">Senhas não coincidem</p>
+    </div>
+
+    <input
+      [class.user-valid]="
+        (registerUser.get('password')?.value?.length ?? 0) >= 8 &&
+        (registerUser.get('confirmPassword')?.value?.length ?? 0) >= 8 &&
+        !registerUser.errors?.['passwordsMismatch']
+      "
+      required
+      placeholder="********"
+      minlength="8"
+      id="confirm__password"
+      type="password"
+      formControlName="confirmPassword"
+    />
+    <button
+      type="submit"
+      [disabled]="!registerUser.valid"
+      [class.validated]="registerUser.valid"
+    >
+      Cadastrar
+    </button>
+  </form>
+</section>

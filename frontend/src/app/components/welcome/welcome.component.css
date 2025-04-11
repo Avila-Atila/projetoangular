@@ -1,0 +1,14 @@
+#section__welcome {
+  font-family: 'ford_antenna', sans-serif;
+
+  h1 {
+    margin-top: 10%;
+    font-size: 3rem;
+    text-align: center;
+    width: auto;
+    word-wrap: break-word;
+    padding: 0 1rem;
+    align-self: baseline;
+    line-height: 1.5;
+  }
+}

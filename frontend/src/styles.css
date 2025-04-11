@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'ford_antenna';
+  src: url(assets/fonts/fordantenna_black.otf) format('opentype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.welcome {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.access {
+  flex: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.register {
+  flex: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-family: 'ford_antenna';
+  background: linear-gradient(90deg, #001f66 0%, #003ecc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

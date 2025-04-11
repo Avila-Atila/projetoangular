@@ -1,0 +1,44 @@
+div {
+  font-family: 'ford_antenna', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+
+  img {
+    width: 50%;
+    min-width: 200px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 3%;
+    word-wrap: break-word;
+    font-weight: bold;
+    width: 65vw;
+    text-align: justify;
+    text-align: center;
+  }
+}
+
+#section__access {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  color: white;
+  background-color: rgb(24, 108, 235);
+  border-radius: 12px;
+  padding: 1%;
+  font-size: 1rem;
+  font-family: 'ford_antenna';
+  font-weight: bold;
+  margin-bottom: 10%;
+  transition: 1s;
+}

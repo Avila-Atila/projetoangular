@@ -1,0 +1,46 @@
+section {
+  width: 85%;
+}
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1%;
+  input {
+    border-radius: 16px;
+    padding: 2%;
+    border-style: solid;
+    margin-bottom: 6%;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.6);
+  }
+  .user-valid {
+    outline: 2px solid;
+    outline-color: rgb(25, 161, 25) !important;
+  }
+
+  input:user-invalid {
+    outline: 2px solid;
+
+    outline-color: rgb(245, 0, 0);
+  }
+  button {
+    color: white;
+    background-color: grey;
+    border-radius: 16px;
+    padding: 3%;
+    font-size: 1rem;
+    font-family: 'ford_antenna';
+    font-weight: bold;
+    margin-top: 15%;
+    transition: 1s;
+  }
+}
+
+.validated {
+  background: linear-gradient(90deg, #001f66 0%, #003ecc 100%);
+  cursor: pointer;
+}
+.validated:hover {
+  transform: scale(1.1);
+}
