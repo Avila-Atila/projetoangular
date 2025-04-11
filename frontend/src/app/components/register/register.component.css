@@ -9,7 +9,7 @@ form {
   gap: 1%;
   input {
     border-radius: 16px;
-    padding: 2%;
+    padding: 3%;
     border-style: solid;
     margin-bottom: 6%;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.6);
@@ -32,7 +32,7 @@ form {
     font-size: 1rem;
     font-family: 'ford_antenna';
     font-weight: bold;
-    margin-top: 15%;
+    margin-top: 5%;
     transition: 1s;
   }
 }

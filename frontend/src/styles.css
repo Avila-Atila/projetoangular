@@ -14,23 +14,24 @@
   width: 100%;
 }
 
-.access {
-  flex: 9;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.register {
-  flex: 9;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .text {
   font-family: 'ford_antenna';
   background: linear-gradient(90deg, #001f66 0%, #003ecc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+app-register {
+  flex: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+app-access {
+  flex: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
